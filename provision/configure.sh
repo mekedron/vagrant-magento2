@@ -96,6 +96,8 @@ EOF
 
 sudo chown -R vagrant:vagrant /home/vagrant/.composer
 
+composer global require hirak/prestissimo
+
 # Pupeter
 #cp /vagrant/tools/bin/commands/advanced_js_building/process.js /home/vagrant/ajb/process.js
 #sudo chown -R vagrant:vagrant /home/vagrant/ajb/process.js

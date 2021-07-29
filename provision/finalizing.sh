@@ -2,8 +2,6 @@
 
 echo '--- Finalizing ---'
 
-composer global require hirak/prestissimo
-
 sudo systemctl start elasticsearch.service
 sudo service mysql restart
 sudo service php${VM_PHP_VERSION}-fpm restart
