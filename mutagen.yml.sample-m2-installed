@@ -1,0 +1,47 @@
+sync:
+  magento:
+    alpha: "src"
+    beta: "magento2.local:/var/www/magento"
+    mode: "two-way-resolved"
+    ignore:
+      vcs: true
+      paths:
+        - /app
+        - /node_modules
+        - /pub/static
+        - /vendor
+    symlink:
+      mode: "posix-raw"
+    watch:
+      mode: "portable"
+      pollingInterval: 60
+    permissions:
+      defaultFileMode: 0644
+      defaultDirectoryMode: 0755
+
+  vendor:
+    alpha: "src/vendor"
+    beta: "magento2.local:/var/www/magento/vendor"
+    mode: "two-way-resolved"
+    ignore:
+      vcs: true
+    symlink:
+      mode: "posix-raw"
+    watch:
+      mode: "portable"
+      pollingInterval: 60
+    permissions:
+      defaultFileMode: 0644
+      defaultDirectoryMode: 0755
+
+  app:
+    alpha: "src/app"
+    beta: "magento2.local:/var/www/magento/app"
+    mode: "two-way-resolved"
+    symlink:
+      mode: "posix-raw"
+    watch:
+      mode: "portable"
+    permissions:
+      defaultFileMode: 0644
+      defaultDirectoryMode: 0755

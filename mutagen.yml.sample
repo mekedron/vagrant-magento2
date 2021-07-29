@@ -1,0 +1,18 @@
+sync:
+  magento:
+    alpha: "src"
+    beta: "magento2.local:/var/www/magento"
+    mode: "two-way-resolved"
+    ignore:
+      vcs: true
+      paths:
+        - /var/view_preprocessed
+        - /node_modules
+        - /pub/static
+    symlink:
+      mode: "posix-raw"
+    watch:
+      mode: "portable"
+    permissions:
+      defaultFileMode: 0644
+      defaultDirectoryMode: 0755

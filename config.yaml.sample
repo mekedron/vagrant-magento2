@@ -1,0 +1,44 @@
+vmconf:
+  box: "ubuntu/focal64"
+  machine_name: "magento2.local"
+  network_ip: "16.1.10.2"
+  memory: "8192"
+  cpus:  "4"
+
+composer:
+  magento:
+    username: "********************************"
+    password: "********************************"
+
+server:
+  php_version: "7.4"
+  time_zone: "Europe/Minsk"
+  php_debug_fpm_ip: "16.1.10.1"
+  php_debug_cli_ip: "16.1.10.1"
+  site_folder: "/var/www/magento"
+
+magento:
+  url: "magento2.local"
+  url_aliases: ""
+  mode: "developer"
+  edition: "community"
+  version: "2.4.2"
+  install: "false"
+  sample: "false"
+  currency: "EUR"
+  language: "en_US"
+  time_zone: "Europe/Minsk"
+  admin_email: "admin@example.com"
+  admin_login: "admin"
+  admin_pass: "Admin123!"
+
+folders:
+  magento:
+    use_mutagen: "false"
+    src: "./src"
+    dest: "/var/www/magento"
+
+db:
+  name: "magentodb"
+  user: "magento"
+  password: "magento"
