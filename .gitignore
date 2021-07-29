@@ -3,3 +3,4 @@
 Mutagen.rb
 config.yaml
 mutagen.yml
+mutagen.yml.lock
