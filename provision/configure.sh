@@ -38,6 +38,8 @@ sudo cp /etc/php/"$VM_PHP_VERSION"/mods-available/zz_php_fpm.ini /etc/php/"$VM_P
 
 
 # fpm
+sudo rm -rf /etc/php/"$VM_PHP_VERSION"/fpm/conf.d/20-xdebug.ini
+sudo rm -rf /etc/php/"$VM_PHP_VERSION"/cli/conf.d/20-xdebug.ini
 sudo ln -s /etc/php/"$VM_PHP_VERSION"/mods-available/zz_xdebug_fpm.ini /etc/php/"$VM_PHP_VERSION"/fpm/conf.d/zz_xdebug_fpm.ini
 sudo ln -s /etc/php/"$VM_PHP_VERSION"/mods-available/zz_xdebug_cli.ini /etc/php/"$VM_PHP_VERSION"/cli/conf.d/zz_xdebug_cli.ini
 
