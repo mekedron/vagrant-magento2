@@ -16,8 +16,8 @@ If you're Mac user please consider to use mutagen for project synchronization.
 If you don't have Magento 2 installed at `./src` then use `mutagen.yaml.sample` sample config, otherwise `mutagen.yml.sample-m2-installed`.
 
 Copy or rename sample mutagen config to `mutagen.yml` and adjust it to your needs.
-$ cp mutagen.yml.sample mutagen.yml
 ```bash
+$ cp mutagen.yml.sample mutagen.yml
 $ nano mutagen.yaml
 ```
 Set the `folders -> magento -> use_mutagen` section inside the `config.yaml` as `true`.
